@@ -10,7 +10,7 @@ To replicate the analysis, first download the following files from Open ICPSR:
 - [Yearly LEOKA](https://www.openicpsr.org/openicpsr/project/102180/version/V13/view?path=/openicpsr/102180/fcr:versions/V13/ucr_leoka_yearly_1960_2022_rds.zip&type=file)
 - [Yearly UCR Return A Files](https://www.openicpsr.org/openicpsr/project/100707/version/V20/view?path=/openicpsr/100707/fcr:versions/V20/ucr_offenses_known_yearly_1960_2022_rds.zip&type=file)
 
-Then in the terminal run:
+Save them in the [data](data/) folder. Then in the terminal run:
 `make reproduce`
 
 Tested on Mac OS 14.1.
