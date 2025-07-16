@@ -7,12 +7,19 @@ Code and analysis for [King of the County: The Power of Sheriffs](https://www.cb
 The aim of this project is to determine how often county sheriffs are involved in lethal force incidents as compared to local police departments or other kinds of law enforcement personnel. To do this, it uses data from [Mapping Police Violence](https://mappingpoliceviolence.squarespace.com/) and the FBI's Uniform Crime Reporting Program.
 
 ## To replicate
-To replicate the analysis, first download the following files from Open ICPSR:
-- [Yearly LEOKA](https://www.openicpsr.org/openicpsr/project/102180/version/V13/view?path=/openicpsr/102180/fcr:versions/V13/ucr_leoka_yearly_1960_2022_rds.zip&type=file)
-- [Yearly UCR Return A Files](https://www.openicpsr.org/openicpsr/project/100707/version/V20/view?path=/openicpsr/100707/fcr:versions/V20/ucr_offenses_known_yearly_1960_2022_rds.zip&type=file)
+To replicate the analysis, first download the following files:
 
-Unzip them and save the `rds` files in the [data](data/) folder. Then in the terminal run:
-`make reproduce`
+1. From Open ICPSR:
+   - [Yearly LEOKA](https://www.openicpsr.org/openicpsr/project/102180/version/V13/view?path=/openicpsr/102180/fcr:versions/V13/ucr_leoka_yearly_1960_2022_rds.zip&type=file)
+   - [Yearly UCR Return A Files](https://www.openicpsr.org/openicpsr/project/100707/version/V20/view?path=/openicpsr/100707/fcr:versions/V20/ucr_offenses_known_yearly_1960_2022_rds.zip&type=file)
+
+2. Mapping Police Violence data from [this Airtable](https://airtable.com/appzVzSeINK1S3EVR/shroOenW19l1m3w0H/tblxearKzw8W7ViN8)
+
+Unzip the ICPSR files and save the `rds` files in the [data](data/) folder. Then in the terminal run:
+```
+poetry init
+make reproduce
+```
 
 Tested on Mac OS 14.1.
 

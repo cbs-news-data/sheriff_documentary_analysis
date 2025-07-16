@@ -3,5 +3,6 @@
 .venv
 config.json
 archive/
+outputs/
 *.rds
 ~$*
